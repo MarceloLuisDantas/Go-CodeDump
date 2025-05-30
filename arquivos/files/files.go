@@ -2,7 +2,6 @@ package files
 
 import (
 	"bufio"
-	"errors"
 	"log"
 	"os"
 )
@@ -21,13 +20,13 @@ func (f *File) Set(i uint, v string) {
 	f.Linhas[i] = v
 }
 
-func (f *File) Remove(i uint) (string, error) {
-	if i >= f.len {
-		return "", errors.New("Empty file")
-	}
+// func (f *File) Remove(i uint) (string, error) {
+// 	if i >= f.len {
+// 		return "", errors.New("Empty file")
+// 	}
 
-	f.Linhas.
-}
+// 	f.Linhas.
+// }
 
 func check(e error) {
 	if e != nil {
